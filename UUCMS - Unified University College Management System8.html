@@ -1,0 +1,3055 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>UUCMS - Unified University College Management System</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="https://uucms.karnataka.gov.in/Content/assets/images/favicon.png" rel="icon">
+    <link href="https://uucms.karnataka.gov.in/Login/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="./UUCMS - Unified University College Management System8_files/css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+
+    <link href="./UUCMS - Unified University College Management System8_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/icofont.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/boxicons.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/animate.min.css" rel="stylesheet">
+
+    <link href="./UUCMS - Unified University College Management System8_files/venobox.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/owl.carousel.min.css" rel="stylesheet">
+    
+    <link href="./UUCMS - Unified University College Management System8_files/aos.css" rel="stylesheet">
+
+    <!--Accessbility controls-->
+    <script src="./UUCMS - Unified University College Management System8_files/jquery-3.6.0.min.js.download"></script>
+    
+    
+
+    <!-- Template Main CSS File -->
+    <link href="./UUCMS - Unified University College Management System8_files/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./UUCMS - Unified University College Management System8_files/plugins.min.css">
+    <link rel="stylesheet" href="./UUCMS - Unified University College Management System8_files/style.min.css">
+
+    <link href="./UUCMS - Unified University College Management System8_files/style(1).css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/bootstrap-datepicker.css" type="text/css">
+    <link href="./UUCMS - Unified University College Management System8_files/Site.css" rel="stylesheet" type="text/css">
+    <script src="./UUCMS - Unified University College Management System8_files/popper.min.js.download"></script>
+    
+    <link href="./UUCMS - Unified University College Management System8_files/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/rowGroup.dataTables.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="./UUCMS - Unified University College Management System8_files/buttons.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./UUCMS - Unified University College Management System8_files/font-awesome.min.css">
+    <link href="./UUCMS - Unified University College Management System8_files/select2.min.css" type="text/css">
+    <script src="./UUCMS - Unified University College Management System8_files/common.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/CRUD.js.download"></script>
+    <link href="./UUCMS - Unified University College Management System8_files/FinSite.css" rel="stylesheet" type="text/css">
+    
+    <script src="./UUCMS - Unified University College Management System8_files/ajaxCall.js.download"></script>
+    <style>
+        .loader1 {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            z-index: 999999;
+            margin: 0 auto;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*background: url(~/Images/Preloader_3.gif) center no-repeat #dddddde6;*/
+        }
+        .underline {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 8px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #edf3f5;
+            margin-top: 40px;
+            /*min-width: 160px;*/
+            min-width: 275px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .state-admin-dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #edf3f5;
+            /*margin-top: 40px;*/
+            /*min-width: 160px;*/
+            min-width: 275px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .login-name {
+            color: #382b56;
+            font-size: 12px;
+            text-align: right;
+        }
+
+        .dropdown-divider {
+            border-top: 1px solid #007bff;
+        }
+
+        .dropdown-content a, .state-admin-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover, .state-admin-dropdown-content a:hover {
+                color: #000;
+                background-color: #92cdd7;
+            }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .state-admin-dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .whiteblack {
+            border-right: 1px solid #676767;
+            color: white;
+            padding: 3px 10px;
+            text-decoration: none;
+            background-color: #000;
+            margin-right: 5px;
+        }
+
+        .standards {
+            border-right: 1px solid #fff;
+            color: #000;
+            padding: 3px 10px;
+            text-decoration: none;
+            background-color: #fff;
+            margin-right: 5px;
+        }
+
+        .mr-18 {
+            margin-right: 18px
+        }
+
+        .font-size-btn {
+            padding: 0 5px 0 5px;
+        }
+
+        i.bx.bx-chevron-right {
+            color: #fff;
+        }
+
+        .contact-details ul li a {
+            color: #fff;
+        }
+
+        section.banner {
+            padding: 6px 20px;
+        }
+
+        .uucms-logo img {
+            position: relative;
+            top: 10px;
+        }
+
+        .cm-logo img {
+            float: right;
+        }
+
+        .gok-logo img {
+            float: right;
+            margin-top: 8px;
+            position: relative;
+            left: 70px;
+        }
+
+        .preloderblock {
+            width: 500px;
+            min-height: 300px;
+            top: 300px;
+            left: 300px;
+            text-align: center;
+            display: block;
+            margin: 7% 32%
+        }
+
+        .loader {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -13px;
+            margin-left: -13px;
+            border-radius: 60px;
+            animation: loader 0.8s linear infinite;
+            -webkit-animation: loader 0.8s linear infinite;
+        }
+
+        .disclaimer {
+            color: #ef731b;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 8px;
+        }
+    </style>
+
+    <style>
+        @media (min-width:200px) and (max-width:598px) {
+            .ulog {
+                text-align: center;
+            }
+
+            .klog {
+                text-align: center;
+            }
+
+            .mlog {
+                text-align: center;
+            }
+
+            .uucms-logo img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .cm-logo img {
+                float: none !important;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .gok-logo img {
+                float: none !important;
+                position: relative;
+                left: 0px !important;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .cm-image img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .contact-info.float-left {
+                display: none !important;
+            }
+
+            .accessibility {
+                display: none !important;
+            }
+
+            .navigation .nav-toggle {
+                width: 30px;
+                height: 30px;
+                padding: 6px 2px 0;
+                position: absolute;
+                top: 50%;
+                margin-top: -14px;
+                right: 15px;
+                cursor: pointer;
+                background: #fff;
+                border-radius: 2px;
+                padding-left: 3px;
+                display: block !important;
+            }
+        }
+
+
+        @media (min-width:600px) and (max-width:768px) {
+            .ulog {
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            .klog {
+                text-align: center;
+                margin-left: 2px;
+            }
+
+            .mlog {
+                text-align: center;
+            }
+
+            .gok-logo img {
+                float: right;
+                margin-top: 0px;
+                position: relative;
+                left: 8px;
+            }
+        }
+
+        @media (min-width: 801px) and (max-width: 1024px) {
+
+
+            .gok-logo img {
+                float: right;
+                position: relative;
+                left: 19px !important;
+            }
+
+            .nav-menu a {
+                display: block;
+                position: relative;
+                color: #fff;
+                padding: 8px 6px;
+                transition: 0.3s;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+            }
+        }
+
+        @media (min-width: 1450px) and (max-width: 1990px) {
+
+            .nav-toggle {
+                display: none;
+            }
+        }
+
+        @media print {
+            .footer, .banner {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0"><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <div id="divLoader" style="display:none;" class="loader1 loader-transparent">
+                
+                <img src="./UUCMS - Unified University College Management System8_files/loader-affiliation.gif" class="wait" alt="Loader">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="clearfix">
+            <div class="contact-info float-left">
+                <i class="icofont-envelope"></i><a>contact-uucms.helpdesk@gmail.com</a>
+                
+            </div>
+            <div class="social-links float-right mr-18">
+                <a class="whiteblack" href="https://uucms.karnataka.gov.in/Login/Success#" onclick="changeColor()" title="Black and White">A</a>
+                <a class="standards" href="https://uucms.karnataka.gov.in/Login/Success#" onclick="defaultColor()" title="Standard">A</a>
+                <button id="decreasetext" class="font-size-btn">
+                    <span>-</span>
+                </button>
+                <button id="resettext" class="font-size-btn">
+                    <span>A</span>
+                </button>
+                <button id="increasetext" class="font-size-btn">
+                    <span>+</span>
+                </button>
+
+
+
+
+                <a class="ml-4 " id="chnageLan"><label class="Enlan">ಕನ್ನಡ</label><label class="knlan" style="display: none;">English</label></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header>
+        
+        
+
+        <section class="banner">
+            <div class="row">
+                <div class="col-md-3 uucms-logo">
+                    <img class="knlan" src="./UUCMS - Unified University College Management System8_files/UUCMS_Logo-01kannada.png" style="display: none;">
+                    <img class="Enlan" src="./UUCMS - Unified University College Management System8_files/UUCMS_Logo-01.png">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2 gok-logo">
+                    <img class="Enlan" src="./UUCMS - Unified University College Management System8_files/gok-logo-uucms-en.png">
+                    <img class="knlan" src="./UUCMS - Unified University College Management System8_files/gok-logo-uucms-kn.png" style="display: none;">
+                    
+                </div>
+                
+                <div class="col-md-3"></div>
+                
+            </div>
+        </section>
+
+        <div class="nav-menu" id="MenuDiv">
+            <div class="row">
+                <div class="col-md-10">
+                    <nav class="nav-menu float-right d-none d-lg-block">
+                        <ul>
+                                <li class="active"><a href="https://uucms.karnataka.gov.in/Login/Success">Home</a></li>
+                                                                <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Student</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/StudentProfile">Student Profile</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/GetStudentProfileEditDetailssp">Profile Edit List</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Scholarship%20Notifications">Scholarship</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Hostel%20Notifications">Hostel Notifications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Placement%20News">Placement News</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Defence/Govt%20Recruitment%20Notifications">Defence/Govt Recruitment</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Internship%20Training%20Notifications">Internship &amp; Training</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Extra%20Curricular">Cultural/Sports</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Other%20Notifications">Other Notifications</a></li>
+                                                    <li class="drop-down">
+                                                        <a href="https://uucms.karnataka.gov.in/Login/Success#">Grievances </a>
+                                                        <ul>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/RaiseGrievanceIncident">Raise Grievances Request</a></li>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/GrievanceHistoryList">View Grievances List</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Academics</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/CourseRegistrationByStudent/StudentCourses">Course Registration</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Exam</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamGeneral/ExamApplications">Exam Applications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/GeneralFee/StudentwiseTransactionHistory">Student Fee Payment Transaction Details</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamReEvaluation/StudentRevaluations">Exam Re-evaluation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Reports</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/MIS/CandidateAdmissionTransactionHistory">Admission Payment Transaction History</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                    </nav><!-- .nav-menu -->
+                </div>
+                    <div class="col-md-2">
+                        <div class="dropdown float-right">
+                            <button class="dropbtn"><em class="mr-2"><i class="fa fa-user-circle  fa-1x" aria-hidden="true"></i></em></button>
+
+                            <div class="state-admin-dropdown-content">
+                                <ul>
+                                    <li><a href="https://uucms.karnataka.gov.in/Login/ChangePassword">Change Password</a></li>
+                                        <li><a href="https://uucms.karnataka.gov.in/studentregistration/manageprofile">Manage profile</a></li>
+                                    <li> <a href="https://uucms.karnataka.gov.in/Login/Logout">Logout</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        
+                    </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                        <h6 class="login-name ">Student, Government First Grade College, K R Puram</h6>             </div>
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main" class="main-head">
+
+        
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .inforide {
+        box-shadow: 1px 2px 8px 0px #f1f1f1;
+        background-color: white;
+        border-radius: 8px;
+        height: 125px;
+        background: #60b9c7;
+    }
+
+        .inforide.dashboard1 {
+            background: #73a7d4;
+        }
+
+        .inforide.dashboard2 {
+            background: #31d09a;
+        }
+
+        .inforide.dashboard3 {
+            background: rgb(169 255 0 / 50%);
+        }
+
+        .inforide.dashboard4 {
+            background: #d67767ad;
+        }
+
+        .inforide.dashboard5 {
+            background: aquamarine;
+        }
+
+    .danger {
+        background-color: #ffdddd;
+        border-left: 6px solid #f44336;
+    }
+
+    .blink {
+        animation: blinker 1.5s linear infinite;
+        color: #000000;
+        font-size: larger;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .scroll-left {
+        height: 70px;
+        overflow: hidden;
+        position: relative;
+    }
+   
+        .scroll-left h4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 70px;
+            text-align: center;
+            /* Starting position */
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            /* Apply animation to this element */
+            -moz-animation: scroll-left 10s linear infinite;
+            -webkit-animation: scroll-left 10s linear infinite;
+            animation: scroll-left 10s linear infinite;
+        }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%);
+        }
+    }
+
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%); /* Browser bug fix */
+            -webkit-transform: translateX(100%); /* Browser bug fix */
+            transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%); /* Browser bug fix */
+            -webkit-transform: translateX(-100%); /* Browser bug fix */
+            transform: translateX(-100%);
+        }
+    }
+    .font__weight-semibold {
+        cursor: pointer;
+    }
+  
+</style>
+<div class="content-wrapper">
+    <div class="content-header-left col-md-12 col-12">
+        
+        <div class="row breadcrumbs-top">
+            <div class="breadcrumb-head">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item breadcrumb-text"><a href="https://uucms.karnataka.gov.in/Login/Success#"><label class="Enlan" style="display: inline-block;">Dashboard</label></a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><label class="Enlan" style="display: inline-block;">View Activities</label></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="file-export ">
+        <br>
+        <div class="row ">
+            <div class="col-12">
+                <div class="card border-primary ">
+                    <div class="card-content collapse show">
+                        <div class="card-body">
+                            <div class="demo-section k-content wide">
+                                <div class="col-md-12">
+                                    <!-- Icon Cards-->
+                                    <h2 class="text-center">Welcome to UUCMS</h2>
+                                    
+                                </div>
+                                <br>
+                                    <p class="align-center">
+                                        <button type="button" class="btn btn-primary" onclick="PreviewApplicationDetails()">View My Admission Details</button>
+                                        
+                                        <a href="https://uucms.karnataka.gov.in/Login/UploadPhotoandSignature" class="btn btn-primary"> Upload My Photo and Signature </a>
+                                          
+                                        <a href="https://uucms.karnataka.gov.in/Login/UploadStudentLoginDocuments" class="btn btn-primary"> Upload Documents </a>
+                                        <a href="https://uucms.karnataka.gov.in/Admission/StudentAdmissionStatusUpdatesView" class="btn btn-primary" style="display:none"> Admission Updates </a> 
+
+                                    </p>
+                                    <br>
+                                    <br>
+                            <marquee direction="left" height="80%" scrollamount="3">
+                                <table id="dvNotificationList">
+                                    <tbody><tr id="trNotificationList">
+                                        
+                                    </tr>
+                                </tbody></table>
+
+                            </marquee>
+                                                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade font" id="DOBChangeModal" role="dialog">
+            <div class="modal-dialog modal-xl" style="width: 40%; margin: 30px auto; padding: 2px;">
+                <div class="modal-content" style="padding:15px;">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Update your Date of Birth</h6>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <b><label> Date of Birth<span class="danger-text">*</span>:</label></b>
+                                    <div class="date-dropdowns"><input type="text" class="form-control" id="dob" placeholder="Click to Select Date of Birth" autocomplete="off" onkeydown="return false" name="date"><select class="year" name="date_[year]"><option value="">Year</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option></select><select class="month" name="date_[month]"><option value="">Month</option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select><select class="day" name="date_[day]"><option value="">Day</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <input type="button" value="Submit" class="btn btn-info mt-2" onclick="submitstudentdata(1)">
+                                <button type="button" class="btn btn-danger mt-2 ml-2" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade font" id="GenderChangeModal" role="dialog">
+            <div class="modal-dialog modal-xl" style="width: 40%; margin: 30px auto; padding: 2px;">
+                <div class="modal-content" style="padding:15px;">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Update your Gender</h6>
+                    </div>
+                    <br>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <b><label> Gender<span class="danger-text">*</span>:</label></b>
+
+                                    <select name="GenderID" id="GenderID" class="form-control">
+                                        <option value="0">--Select--</option>
+                                        <option value="2">Female</option>
+                                        <option value="1">Male</option>
+                                        <option value="3">Transgender</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <input type="button" value="Submit" class="btn btn-info mt-2" onclick="submitstudentdata(2)">
+                                <button type="button" class="btn btn-danger mt-2 ml-2" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-12" id="App_Preview" style="display:none">
+            
+
+<br>
+<br>
+<div class="card">
+    <div class="card-header" style="text-align:center;font-weight:bold">
+        Admission Details
+    </div>
+    <div class="card-body">
+        <section class="setup-section">
+            <h5 class="mt-2 mb-2 details-section-heading">Registration Number</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Registration Number: <b><label id="registration_num_value"></label></b></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 class="mt-2 mb-2 details-section-heading">Personal Details</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Program Level: <b><label id="program_level_name_value"></label></b></p>
+                        <p>Student Name: <b><label id="student_name_value"></label></b></p>
+                        <p>Gender: <b><label id="gender_value"></label></b></p>
+                        <p>Date of Birth: <b><label id="DOB_value"></label></b></p>
+                        <p>Father's Name: <b><label id="Father_name_value"></label></b></p>
+                        <p>Mother's Name: <b><label id="Mother_name_value"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Guardian's Name: <b><label id="Guardian_name_value"></label></b></p>
+                        <p>Email Address: <b><label id="EmailAddress_value"></label></b></p>
+                        <p style="display:none;">Are you Indian: <b><label id="Indian_value"></label></b></p>
+                        <p style="display:none;">Country of Origin: <b><label id="Country_name_value"></label></b></p>
+                         
+                        
+
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="mt-2 mb-2 details-section-heading">Permanent Address</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Address: <b><label id="Permanent_Address_Street_value"></label></b></p>
+                                <p>State: <b><label id="Permanent_Address_State_value"></label></b></p>
+                                <p>District: <b><label id="Permanent_Address_District_value"></label></b></p>
+                                <p>Taluk: <b><label id="Permanent_Address_Taluk_value"></label></b></p>
+                                <p>Grama Panchayat/ward: <b><label id="Permanent_Address_Gramapanchayat_value"></label></b></p>
+                                <p>Village/Area: <b><label id="Permanent_Address_Village_value"></label></b></p>
+                                <p>PinCode: <b><label id="Permanent_Address_Pincode_value"></label></b></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="mt-2 mb-2 details-section-heading">Current Address</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Address: <b><label id="Current_Address_Street_value"></label></b></p>
+                                <p>State: <b><label id="Current_Address_State_value"></label></b></p>
+                                <p>District: <b><label id="Current_Address_District_value"></label></b></p>
+                                <p>Taluk: <b><label id="Current_Address_Taluk_value"></label></b></p>
+                                <p>Grama Panchayat/ward: <b><label id="Current_Address_Gramapanchayat_value"></label></b></p>
+                                <p>Village/Area: <b><label id="Current_Address_Village_value"></label></b></p>
+                                <p>PinCode: <b><label id="Current_Address_Pincode_value"></label></b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+            <h5 class="mt-2 mb-2 details-section-heading">Photo and signature</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Photos: <b><label id="Photo_value"></label></b></p>
+                        <p>Signature: <b><label id="Signature_value"></label></b></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 class="mt-2 mb-2 details-section-heading">Special Catagory</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Religion: <b><label id="Religion_value"></label></b></p>
+                        <p>Family Income Per Annum (in INR): <b><label id="Family_Income_value"></label></b></p><br>
+
+                        <p>
+                            Are you a Kashmiri Migrant?: <b><label id="Are_you_kashmiri_value"></label></b>
+                            <br>
+                            </p><div id="KashmiriHide">
+                                Document Number: <b><label id="kashmiri_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="kashmiri_doc_path_value"></label></b>
+                            </div>
+                            
+                        <p></p><br>
+                        <p>
+                            Are you claiming under Defence Personnel Quota?: <b><label id="Defence_Personel_value"></label></b>
+                            <br>
+                            </p><div id="DefenceHide">
+                                Document Number: <b><label id="Defence_Personel_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Defence_Personel_doc_path_value"></label></b>
+                            </div>
+
+                        <p></p><br>
+                        <p>
+                            Are you Child of Freedom Fighter?: <b><label id="Child_freedom_value"></label></b>
+                            <br>
+                            </p><div id="ChildFreedomHide">
+                                Document Number: <b><label id="Child_freedom_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Child_freedom_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Category: <b><label id="Category_name_value"></label></b></p>
+                        <p>
+                            Are you Claiming Reservation/Benefits under above selected
+                            category?: <b><label id="Category_value"></label></b>
+                            <br>
+                            </p><div id="CategoryHide">
+                                Caste Certificate:
+                                <br>
+                                RD Number: <b><label id="Category_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Category_doc_path_value"></label></b>
+                                <br>
+                                Income Certificate:
+                                <br>
+                                RD Number: <b><label id="Income_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Income_doc_path_value"></label></b>
+                            </div>
+                            <br>
+                        <p></p><br>
+                        <p>
+                            Kannada Medium:?: <b><label id="Kannada_medium_value"></label></b>
+                            <br>
+                            </p><div id="KannadaMediumHide">
+                                Document Number: <b><label id="Kannada_medium_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Kannada_medium_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+                        <p>
+                            Are you claiming under Political Sufferer Quota?: <b><label id="Politocal_value"></label></b>
+                            <br>
+                            </p><div id="PoliticalSuffererHide">
+                                Document Number: <b><label id="Politocal_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Politocal_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+                        <p>
+                            Are you a Person with Disability?: <b><label id="Person_disability_value"></label></b>
+                            <br>
+                            </p><div id="DisabilityHide">
+                                Type of Disability:<b><label id="Disability_typename_value"></label></b>
+                                <br>
+                                Percentage Disability(%):<b><label id="Disability_percentage_value"></label></b>
+                                <br>
+                                Document Number: <b><label id="Person_disability_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Person_disability_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+
+                        
+
+                    </div>
+                    <div class="col-md-4">
+                        <p>Caste: <b><label id="Caste_name_value"></label></b></p>
+                        <p>
+                            Do you belong to Kalyana Karnataka?: <b><label id="Kalyan_karnataka_value"></label></b>
+                            <br>
+                            </p><div id="KalyankarnatakaHide">
+                                Document Number: <b><label id="Kalyan_karnataka_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Kalyan_karnataka_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+                        <p>
+                            Are you a Rural Candidate?: <b><label id="Rural_value"></label></b>
+                            <br>
+                            </p><div id="RuralHide">
+                                Document Number: <b><label id="Rural_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Rural_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+
+                        <p>
+                            Are you a Gadinadu/Horanadu Kannadiga?: <b><label id="Gadinadu_value"></label></b>
+                            <br>
+                            </p><div id="GadinaduHide">
+                                Document Number: <b><label id="Gadinadu_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Gadinadu_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+                        <p>
+                            Children of Sexually Exploited / HIV Infected
+                            /Devadasi: <b><label id="Children_sexually_value"></label></b>
+                            <br>
+                            </p><div id="ChildrenhivdevadasiHide">
+                                Document Number: <b><label id="Children_sexually_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Children_sexually_doc_path_value"></label></b>
+                            </div>
+                        <p></p><br>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="mt-2 mb-2 details-section-heading">Quota and Bank Details</h5>
+            <div class="address-box p-4">
+                <div class="row">
+
+                    <h4>Are you claiming seat under any of the below listed Quota?</h4><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            Sportsperson / Athlete at
+                            the University / State / National Level?: <b><label id="Sportsperson_value"></label></b>
+                            <br>
+                            </p><div id="SportspersonHide">
+                                Document Number: <b><label id="Sportsperson_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Sportsperson_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <p>
+                            NCC (Please Provide B/ C and any
+                            Other certificate): <b><label id="Ncc_value"></label></b>
+                            <br>
+                            </p><div id="NccHide">
+                                Document Number: <b><label id="Ncc_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Ncc_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <p>
+                            NSS:
+                            <b><label id="Nss_value"></label></b>
+                            <br>
+                            </p><div id="NssHide">
+                                Document Number: <b><label id="Nss_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Nss_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            LCA (Literary &amp; Cultural
+                            Activities):
+                            <b><label id="Lca_value"></label></b>
+                            <br>
+                            </p><div id="LcaHide">
+                                Document Number: <b><label id="Lca_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Lca_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+
+                    <br>
+                    <div class="col-md-4">
+                        <p>
+                            Child of farmers who committed
+                            suicide:
+                            <b><label id="child_value"></label></b>
+                            <br>
+                            </p><div id="childHide">
+                                Document Number: <b><label id="child_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="child_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <p>
+                            Destitute Women:
+                            <b><label id="Destitute_value"></label></b>
+                            <br>
+                            </p><div id="DestituteHide">
+                                Document Number: <b><label id="Destitute_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Destitute_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            Displaced Citizen
+                            (Nirashrutharu):
+                            <b><label id="Displace_value"></label></b>
+                            <br>
+                            </p><div id="DisplaceHide">
+                                Document Number: <b><label id="Displace_doc_no_value"></label></b>
+                                <br>
+                                Document: <b><label id="Displace_doc_path_value"></label></b>
+                            </div>
+                        <p></p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="mt-4 mb-2 details-section-heading">Enter Your Bank Details</h5>
+                        <p>
+                            Bank Name:
+                            <b><label id="Bank_Name_value"></label></b>
+                        </p>
+                        <p>
+                            Account Holder Name:
+                            <b><label id="Bank_account_holder_name_value"></label></b>
+                        </p>
+                        <p>
+                            Account Number:
+                            <b><label id="Account_number_value"></label></b>
+                        </p>
+                        <p>
+                            IFSC Code:
+                            <b><label id="Bank_ifsc_value"></label></b>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <h5 class="mt-2 mb-2 details-section-heading">Previous Education Details</h5>
+            <div class="address-box p-4">
+                <h5 class="text-center"> 10th Standard Education Details</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Board Name: <b><label id="Board_name_10th"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Registration Number: <b><label id="Registrartion_number_10th"></label></b></p>
+                    </div>
+                    <div class="col-md-4" style="display:none" id="10thcgpa">
+                        <p>CGPA: <b><label id="cgpa_10th"></label></b></p>
+
+                    </div>
+                </div>
+
+                <div class="row" id="10thperc" style="display:none">
+                    <div class="col-md-4">
+                        <p>Total Maximum Marks: <b><label id="Total_max_num_10th"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Total Marks Obtained: <b><label id="Total_obt_num_10th"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Overall Percentage: <b><label id="Total_perct_10th"></label></b></p>
+
+                    </div>
+
+                </div>
+                <br>
+
+                <div id="Pu">
+                    <h5 class="text-center">  12th or Equivalent Education Details</h5>
+                    <h5 class="text-center">Karnataka Pu</h5>
+                    <br>
+                    <div class="row">
+
+
+                        <div class="col-md-4">
+                            <p>Registration Number: <b><label id="Registration_num_12th"></label></b></p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Institute Name: <b><label id="Institute_name_12th"></label></b></p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                Year of
+                                Completion: <b><label id="Year_of_completion_12th"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+
+                            <p>
+                                College Code: <b><label id="College_code_12th"></label></b>
+                            </p>
+                            <p>
+                                Obtained Marks: <b><label id="stud_12th_obtained_marks_value"></label></b>
+                            </p>
+                            <p>
+                                Maxinmum Marks: <b><label id="stud_12th_max_marks_value"></label></b>
+                            </p>
+                            <p>
+                                Percentage: <b><label id="stud_12th_percentage_value"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+
+                            <p>
+                                Maximum marks: <b><label id="Maximum_marks_pu"></label></b>
+                            </p>
+
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <p>
+                                Obtained Marks: <b><label id="Obtained_Marks_pu"></label></b>
+                            </p>
+
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <p>
+                                Overall Percentage: <b><label id="Overall_Percentage_pu"></label></b>
+                            </p>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <br>
+                <div id="PuEquivalent">
+                    <h5 class="text-center">Other Pu Equivalent</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>
+                                PU Equivalent Course Type: <b><label id="PU_Equivalent_Course_Type"></label></b>
+                            </p>
+                            <p>
+                                Registration
+                                No: <b><label id="Registration_num_other_puc"></label></b>
+                            </p>
+                            
+                            <p>
+                                Year of
+                                Completion: <b><label id="Year_of_Completion_other_puc"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Board Name: <b><label id="Board_name_other_puc"></label></b></p>
+
+                            <p>
+                                Institution Name: <b><label id="Institute_Name_other_puc"></label></b>
+                            </p>
+                            <p>
+                                Country of
+                                Study: <b><label id="Country_of_Study_other_puc"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                Grading
+                                System: <b><label id="Grading_System_other_puc"></label></b>
+                            </p>
+
+                            <div class="col-md-4" id="otherpueq4">
+                                <p>
+                                    Overall CGPA: <b><label id="Overall_CGPA"></label></b>
+                                </p>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        <div class="col-md-4" id="otherpueq1">
+                            <p>
+                                Maximum marks: <b><label id="Maximum_marks"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4" id="otherpueq2">
+                            <p>
+                                Obtained Marks: <b><label id="Obtained_Marks"></label></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4" id="otherpueq3">
+                            <p>
+                                Overall Percentage: <b><label id="Overall_Percentage"></label></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="table-responsive">
+                            <table class="table table-bordered bordered-table" id="Preview-table-details1">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;">Sl. No</th>
+                                        <th style="text-align:center;">Subject Type</th>
+                                        <th style="text-align:center;">Subject Name</th>
+                                        <th style="text-align:center;">No. of credits</th>
+                                        <th style="text-align:center;">Credit/Noncredits</th>
+                                        <th style="text-align:center;">Obtained Credits</th>
+                                        <th style="text-align:center;">Grade Points</th>
+                                        <th style="text-align:center;">Maximum Grade Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody_Preview_table1"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="table-responsive">
+                            <table class="table table-bordered bordered-table" id="Preview-table-details">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;">Sl. No</th>
+                                        <th style="text-align:center;">Subject Name</th>
+                                        <th style="text-align:center;">Subject Type</th>
+                                        <th style="text-align:center;">Maximum Marks</th>
+                                        <th style="text-align:center;">Marks Obtained</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody_Preview_table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+            </div>
+
+
+
+            
+
+            <br>
+            <h5 class="mt-2 mb-2 details-section-heading">Program Details</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Program Name: <b><label id="program_name_value"></label></b></p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h5 class="mt-2 mb-2 details-section-heading">Discipline Details</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="table-responsive">
+                            <table class="table table-bordered bordered-table">
+                                <thead>
+
+                                    <tr>
+                                        <th style="text-align:center;">Sl. No</th>
+                                        <th style="text-align:center;">Discipline Code</th>
+                                        <th style="text-align:center;">Discipline Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody_discipline_table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+
+                </div>
+            </div>
+
+            <br>
+            <h5 class="mt-2 mb-2 details-section-heading">Fee Paid Details</h5>
+            <div class="address-box p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Receipt Number: <b><label id="Receipt_num_value"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Fees Amount: <b><label id="Fees_Amount_value"></label></b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Payment Date: <b><label id="Payment_Date_value"></label></b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://uucms.karnataka.gov.in/Login/Success" class="btn btn-primary" style="float:right;">Back</a>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <span style="color:red;" class="center">
+                Note:<br>
+                Any discrepancy in details please contact your college admin.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+</div>
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    
+
+
+
+    <!-- End Footer -->
+    <!--New Footer-->
+    
+
+
+
+    <!--End Footer-->
+    <!--New Footer-->
+    <section id="con" class="footer " style="background-color:#07294d; padding: 1px 0px 1px 0px">
+        <div class="container-fluid">
+
+
+            <div class="col-md-12">
+
+                <div class="disclaimer">
+
+                    <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Disclaimer:</span>Please note this page also provides links to websites/web pages of Govt. Ministries/Departments/Organisations.The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <section id="con" class="footer-tollnumber" style="background-color:#07294d; padding: 1px 0px 1px 0px">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="disclaimer">
+                        <p class="text-white text-center mt-1" style="font-size:12px;"><span class="disclaimer">Student Help Desk Number :</span> 08069261300(10AM-6PM) Lunch Break(1:30PM-2:15PM)</p>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <section class="copyright-section">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p style="font-size:12px;"> Designed &amp; Developed by Centre for Smart Governance (V_ADM_4.10_A1.7_E_0.3)<span style="color:#fff">S2</span></p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--End Footer-->
+
+
+
+
+
+
+    <a href="https://uucms.karnataka.gov.in/Login/Success#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./UUCMS - Unified University College Management System8_files/bootstrap.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/jquery-3.6.0.min.js.download"></script>
+    
+    <script src="./UUCMS - Unified University College Management System8_files/bootstrap.bundle.min.js.download"></script>
+    
+    <script src="./UUCMS - Unified University College Management System8_files/bootbox.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/moment.min.js.download"></script>
+
+    <script src="./UUCMS - Unified University College Management System8_files/jquery.easing.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/validate.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/jquery.sticky.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/venobox.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/jquery.waypoints.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/counterup.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/owl.carousel.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/isotope.pkgd.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/aos.js.download"></script>
+
+     
+    <script src="./UUCMS - Unified University College Management System8_files/jquery-dropdown-datepicker.min.js.download"></script>
+
+
+
+    <!-- Template Main JS File -->
+    <script src="./UUCMS - Unified University College Management System8_files/main.js.download"></script><div class="mobile-nav d-lg-none" id="MenuDiv">
+            <div class="row">
+                <div class="col-md-10">
+                    <nav class="nav-menu float-right d-none d-lg-block">
+                        <ul>
+                                <li class=""><a href="https://uucms.karnataka.gov.in/Login/Success">Home</a></li>
+                                                                <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Student</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/StudentProfile">Student Profile</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/GetStudentProfileEditDetailssp">Profile Edit List</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Scholarship%20Notifications">Scholarship</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Hostel%20Notifications">Hostel Notifications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Placement%20News">Placement News</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Defence/Govt%20Recruitment%20Notifications">Defence/Govt Recruitment</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Internship%20Training%20Notifications">Internship &amp; Training</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Extra%20Curricular">Cultural/Sports</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Other%20Notifications">Other Notifications</a></li>
+                                                    <li class="drop-down">
+                                                        <a href="https://uucms.karnataka.gov.in/Login/Success#">Grievances </a>
+                                                        <ul>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/RaiseGrievanceIncident">Raise Grievances Request</a></li>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/GrievanceHistoryList">View Grievances List</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Academics</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/CourseRegistrationByStudent/StudentCourses">Course Registration</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Exam</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamGeneral/ExamApplications">Exam Applications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/GeneralFee/StudentwiseTransactionHistory">Student Fee Payment Transaction Details</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamReEvaluation/StudentRevaluations">Exam Re-evaluation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Reports</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/MIS/CandidateAdmissionTransactionHistory">Admission Payment Transaction History</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                    </nav><!-- .nav-menu -->
+                </div>
+                    <div class="col-md-2">
+                        <div class="dropdown float-right">
+                            <button class="dropbtn"><em class="mr-2"><i class="fa fa-user-circle  fa-1x" aria-hidden="true"></i></em></button>
+
+                            <div class="state-admin-dropdown-content">
+                                <ul>
+                                    <li><a href="https://uucms.karnataka.gov.in/Login/ChangePassword">Change Password</a></li>
+                                        <li><a href="https://uucms.karnataka.gov.in/studentregistration/manageprofile">Manage profile</a></li>
+                                    <li> <a href="https://uucms.karnataka.gov.in/Login/Logout">Logout</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        
+                    </div> 
+            </div>
+        </div><nav class="mobile-nav d-lg-none">
+                        <ul>
+                                <li class=""><a href="https://uucms.karnataka.gov.in/Login/Success">Home</a></li>
+                                                                <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Student</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/StudentProfile">Student Profile</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/StudentProfile/GetStudentProfileEditDetailssp">Profile Edit List</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Scholarship%20Notifications">Scholarship</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Hostel%20Notifications">Hostel Notifications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Placement%20News">Placement News</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Defence/Govt%20Recruitment%20Notifications">Defence/Govt Recruitment</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Internship%20Training%20Notifications">Internship &amp; Training</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Extra%20Curricular">Cultural/Sports</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/BulletinAndNotifications/StudentNotifications?PageName=Other%20Notifications">Other Notifications</a></li>
+                                                    <li class="drop-down">
+                                                        <a href="https://uucms.karnataka.gov.in/Login/Success#">Grievances </a>
+                                                        <ul>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/RaiseGrievanceIncident">Raise Grievances Request</a></li>
+                                                                <li><a href="https://uucms.karnataka.gov.in/Grievance/GrievanceHistoryList">View Grievances List</a></li>
+                                                        </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Academics</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/CourseRegistrationByStudent/StudentCourses">Course Registration</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Exam</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamGeneral/ExamApplications">Exam Applications</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/GeneralFee/StudentwiseTransactionHistory">Student Fee Payment Transaction Details</a></li>
+                                                    <li><a href="https://uucms.karnataka.gov.in/ExamReEvaluation/StudentRevaluations">Exam Re-evaluation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down">
+                                        <a href="https://uucms.karnataka.gov.in/Login/Success">Reports</a>
+                                        <ul>
+                                                    <li><a href="https://uucms.karnataka.gov.in/MIS/CandidateAdmissionTransactionHistory">Admission Payment Transaction History</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                    </nav><div class="mobile-nav-overly"></div>
+    <!--Data Tale related JS Files-->
+    <script src="./UUCMS - Unified University College Management System8_files/jquery.dataTables.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/dataTables.rowGroup.min.js.download"></script>
+    <link href="./UUCMS - Unified University College Management System8_files/jquery-ui.css" rel="stylesheet">
+    <script src="./UUCMS - Unified University College Management System8_files/jquery-ui.js.download"></script>
+    
+    <script src="./UUCMS - Unified University College Management System8_files/dataTables.buttons.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/buttons.flash.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/jszip.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/pdfmake.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/vfs_fonts.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/buttons.html5.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/buttons.print.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/dataTables.fixedHeader.min.js.download"></script>
+    <script src="./UUCMS - Unified University College Management System8_files/select2.min.js.download"></script>
+    
+    <script>
+        $(document).ready(function () {
+
+
+
+            $("#App_Preview").hide();
+
+            $('#DOBChangeModal').modal('hide');
+            $('#GenderChangeModal').modal('hide');
+
+        var isBankdetailsPresent = '';
+        var Role = '2';
+        if (isBankdetailsPresent == "False" && Role == '3') {
+            var msg = "Bank Details not present. Please save Bank details to proceed further";
+            bootbox.alert(msg, function () {
+                location.replace("../Bank/UniversityBankDetails");
+                //window.location.href = url;
+            });
+        }
+        //else if (isBankdetailsPresent == "False" && Role == '4') {
+        //     alert("Bank Details not present. Please save Bank details to proceed further");
+        //    var url = '/Bank/CollegeBankdetails';
+        //    window.location.href = url;
+        //}
+
+        })
+
+        function dateFormat(d) {
+            console.log(d);
+            return (d.getDate() + "").padStart(2, "0")
+                + "/" + ((d.getMonth() + 1) + "").padStart(2, "0")
+                + "/" + d.getFullYear();
+        }
+
+        function PreviewApplicationDetails() {
+
+            var id ='1192013';
+            var regNo = 'U19GZ22S0164';
+            var UniversityID = '23';
+            if (UniversityID == 12) {
+                var url = "/RegionalCenter/StudentPreviewKSOU?id=" + id;
+                window.location.href = url;
+            }
+            else {
+                var url = "/MIS/PreviewStudentApplicationDetails?stud_app_id=" + id + "&registrationNo=" + regNo;
+                window.location.href = url;
+            }
+
+        }
+        function StudentDocumentsUpload() {
+            var id ='1192013';
+            var regNo ='U19GZ22S0164';
+            //
+            var url = "/Login/StudentDocumentsUpload?stud_app_id=" + id + "&registrationNo=" + regNo;
+            window.location.href = url;
+
+        }
+
+        function PaySemFees()
+        {
+
+            var id = '1192013';
+            if (id != "") {
+                var SemesterID = '2';
+                var Promotion_Year = '2';
+                $.ajax({
+                    url: '/CollegeAdmin/VerifySemesterwiseAdmissionDate',
+                    data: { StudentAppID: id, Semester: SemesterID, Promotion_Year: Promotion_Year},
+                    type: 'GET',
+                    async: false,
+                    success: function (result) {
+                        if (result.ValidationType == 1) {
+                            valid = 1;
+                            IsAutonomous = result.IsAutonomous;
+                        }
+                        else if (result.ValidationType == 4) {
+                            valid = 4;
+                        }
+                        else if (result.ValidationType == 5) {
+                            valid = 5;
+                        }
+                        else if (result.ValidationType == 2) {
+                            valid = 2;
+                            IsAutonomous = result.IsAutonomous;
+                        }
+                        else if (result.ValidationType == 101) {
+                            valid = 101;
+                        }
+                        else if (result.ValidationType == 6) {
+                            valid = 6;
+                            acoet_penalty_amount = result.acoet_penalty_amount;
+                        }
+                        else if (result.ValidationType == 7) {
+                            valid = 7;
+                        }
+                        else {
+                            valid = 3;
+                        }
+                    },
+                    error: function (result) {
+                    }
+                });
+                debugger
+                if (valid == 1) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Admission/GetNSDLCollegeStatus",
+                        data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                        success: function (data) {
+                            debugger
+                            if (data == "UniversityFeesetupNull") {
+                                bootbox.alert("Fee has not been set up by University, please contact University.");
+                            }
+                            else if (data == "CollegeFeesetupNull") {
+                                bootbox.alert("Fee has not been set up by College, please contact College.");
+                            }
+                            else if (data == "UniversityNSDLsetupNull") {
+                                bootbox.alert("This University is not available for online payment, please contact University.");
+                            }
+                            else if (data == "COllegeNSDLsetupNull") {
+                                bootbox.alert("This College is not available for online payment, please contact College.");
+                            }
+                            else if (data == "UniversityCollegeFeesetupZero") {
+                                bootbox.alert("Fee has not been set up by University, please contact University.");
+                            }
+                            else if (data == "UniversityFeesetupZero") {
+                                bootbox.alert("Fee has not been set up by University, please contact University.");
+                            }
+                            else if (data == "UniversityCollegeFeesetupNull") {
+                                bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                            }
+                            else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                            }
+                            else {
+                                var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=7";
+                                window.location.href = url;
+                            }
+
+
+
+                        }
+                    });
+
+                }
+                else if (valid == 2 && IsAutonomous == true) {
+                    var msg = "College has not setup 3rd Semester overall admission date.";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 2) {
+                    var msg = "University has not setup 3rd Semester overall admission date.";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 4) {
+                    var msg = "Admission date has not started yet for 3rd Semester";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 5) {
+                    var msg = "Admission date is Already Over for 3rd Semester";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                //else if (valid == 101) {
+                //    debugger
+                //    $.ajax({
+                //        type: "POST",
+                //        url: "/Admission/GetNSDLCollegeStatus",
+                //        data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                //        success: function (data) {
+
+                //            if (data == "UniversityFeesetupNull") {
+                //                bootbox.alert("Fee has not been set up by University, please contact University.");
+                //            }
+                //            else if (data == "CollegeFeesetupNull") {
+                //                bootbox.alert("Fee has not been set up by College, please contact College.");
+                //            }
+                //            else if (data == "UniversityNSDLsetupNull") {
+                //                bootbox.alert("This University is not available for online payment, please contact University.");
+                //            }
+                //            else if (data == "COllegeNSDLsetupNull") {
+                //                bootbox.alert("This College is not available for online payment, please contact College.");
+                //            }
+                //            else if (data == "UniversityCollegeFeesetupZero") {
+                //                bootbox.alert("Fee has not been set up by University, please contact University.");
+                //            }
+                //            else if (data == "UniversityFeesetupZero") {
+                //                bootbox.alert("Fee has not been set up by University, please contact University.");
+                //            }
+                //            else if (data == "UniversityCollegeFeesetupNull") {
+                //                bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                //            }
+                //            else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                //                bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                //            }
+                //            else {
+                //                var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=7";
+                //                window.location.href = url;
+                //            }
+                //        }
+                //    });
+                //}
+                else if (valid == 6) {
+                    var msg = "You are submitting your application after Overall Admission End Date and a penalty of Rs." + acoet_penalty_amount + " will be applicable.";
+                    bootbox.confirm({
+                        message: msg,
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-success'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-danger'
+                            }
+                        },
+                        callback: function (result) {
+                            debugger
+                            if (result == true) {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/Admission/GetNSDLCollegeStatus",
+                                    data: { college_id: 0, ProgramlevelID: 0, ApplicationID: 0, Priority: 0, Registration_id: id },
+                                    success: function (data) {
+                                        debugger
+                                        if (data == "UniversityFeesetupNull") {
+                                            bootbox.alert("Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "CollegeFeesetupNull") {
+                                            bootbox.alert("Fee has not been set up by College, please contact College.");
+                                        }
+                                        else if (data == "UniversityNSDLsetupNull") {
+                                            bootbox.alert("This University is not available for online payment, please contact University.");
+                                        }
+                                        else if (data == "COllegeNSDLsetupNull") {
+                                            bootbox.alert("This College is not available for online payment, please contact College.");
+                                        }
+                                        else if (data == "UniversityCollegeFeesetupZero") {
+                                            bootbox.alert("Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "UniversityFeesetupZero") {
+                                            bootbox.alert("Fee has not been set up by University, please contact University.");
+                                        }
+                                        else if (data == "UniversityCollegeFeesetupNull") {
+                                            bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                        }
+                                        else if (data == "ZeroFeeUniversityNullFeeCollege") {
+                                            bootbox.alert("Fee has not been set up by University and College, please contact University and college.");
+                                        }
+                                        else {
+                                            var url = "/Admission/PayOnline?Id=" + id + "&PurposeofPayment=7";
+                                            window.location.href = url;
+                                        }
+
+                                    }
+                                });
+
+                            }
+                        }
+                    });
+                }
+                else if (valid == 7) {
+                    var msg = "Admission and Penalty date is Already Over for this Semester.";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else {
+                    bootbox.alert("oops something went wrong");
+                    return false;
+                }
+            }
+        }
+
+        function PaySemFeesOffline()
+        {
+
+             var id = '1192013';
+
+            if (id != "") {
+                var SemesterID = 3;
+                $.ajax({
+                    url: '/CollegeAdmin/VerifySemesterwiseAdmissionDate',
+                    data: { StudentAppID: id, Semester: SemesterID},
+                    type: 'GET',
+                    async: false,
+                    success: function (result) {
+                        if (result.ValidationType == 1) {
+                            valid = 1;
+                        }
+                        else if (result.ValidationType == 4) {
+                            valid = 4;
+                        }
+                        else if (result.ValidationType == 5) {
+                            valid = 5;
+                        }
+                        else if (result.ValidationType == 2) {
+                            valid = 2;
+                        }
+                        else if (result.ValidationType == 6) {
+                            valid = 6;
+                            acoet_penalty_amount = result.acoet_penalty_amount;
+                        }
+                        else if (result.ValidationType == 7) {
+                            valid = 7;
+                        }
+                        else if (result.ValidationType == 101) {
+                            valid = 101;
+                        }
+                        else {
+                            valid = 3;
+                        }
+                    },
+                    error: function (result) {
+                    }
+                });
+
+                if (valid == 1) {
+                   var id = '1192013';
+            var url = "/Admission/UploadFeePaidDetails?StudAppID=" + id;
+            window.location.href = url;
+                }
+                else if (valid == 101) {
+                   var id = '1192013';
+            var url = "/Admission/UploadFeePaidDetails?StudAppID=" + id;
+            window.location.href = url;
+                }
+                else if (valid == 2) {
+                    var msg = "University has not setup 3rd Semester overall admission date.";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 4) {
+                    var msg = "Admission date has not started yet for 3rd Semester";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 5) {
+                    var msg = "Admission date is Already Over for 3rd Semester";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else if (valid == 6) {
+                    var msg = "You are submitting your application after Overall Admission End Date and a penalty of Rs." + acoet_penalty_amount + " will be applicable.";
+                    bootbox.confirm({
+                        message: msg,
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-success'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-danger'
+                            }
+                        },
+                        callback: function (result) {
+                            if (result == true) {
+
+            var id = '1192013';
+            var url = "/Admission/UploadFeePaidDetails?StudAppID=" + id;
+            window.location.href = url;
+                            }
+                        }
+                    });
+                }
+                else if (valid == 7) {
+                    var msg = "Admission and Penalty date is Already Over for this Semester.";
+                    bootbox.alert(msg, function () {
+                    });
+                    return false;
+                }
+                else {
+                    bootbox.alert("oops something went wrong");
+                    return false;
+                }
+            }
+
+
+        }
+
+        function UpdateDateOfBirth() {
+            $('#dob').val('');
+            $('#DOBChangeModal').modal('show');
+        }
+        function UpdateGender() {
+            $('#GenderID').val("0");
+            $('#GenderChangeModal').modal('show');
+        }
+        $('#dob').dropdownDatepicker({
+            minAge: 15,
+            maxAge: 90,
+            defaultDateFormat: 'dd-mm-yyyy',
+            displayFormat: 'ymd',
+            submitFormat: 'dd-mm-yyyy',
+            daySuffixValues: ['', '', '', '']
+
+        });
+        function submitstudentdata(savetype)
+        {
+            debugger;
+            if (savetype == 1)
+            {
+                // Update Date of Birth
+                if ($('#dob').val() == null || $('#dob').val() == "")
+                {
+                    bootbox.alert("Please enter your date of birth");
+                    return false;
+                }
+                var DateofBirthString = $('#dob').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/UpdateStudentDetails",
+
+                    data: {
+                        DateofBirthString: DateofBirthString,
+                        savetype: savetype
+                    },
+                    async: false,
+                    success: function (data) {
+                        if (data == "Success") {
+                            var msg = "Date of Birth updated successfully";
+                            $('#DOBChangeModal').modal('hide');
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                        else {
+                            var msg = "Oops! something went wrong";
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                    }
+                });
+
+            }
+            else if (savetype == 2)
+            {
+                // Update Gender
+                if ($('#GenderID').val() == null || $('#GenderID').val() == "" || $('#GenderID').val() == 0)
+                {
+                    bootbox.alert("Please select your gender");
+                    return false;
+                }
+
+                var GenderID = $('#GenderID').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/Login/UpdateStudentDetails",
+
+                    data: {
+                        GenderID: GenderID,
+                        savetype: savetype
+                    },
+
+                    async: false,
+                    success: function (data) {
+                        if (data == "Success") {
+                            var msg = "Gender updated successfully";
+                            $('#GenderChangeModal').modal('hide');
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                        else {
+                            var msg = "Oops! something went wrong";
+                            bootbox.alert(msg, function () {
+                                var url = "/Login/Success";
+                                window.location.href = url;
+                            });
+                        }
+                    }
+                });
+
+            }
+
+        }
+
+        //sss module start
+        SSS_CheckSSPDid();
+        var id = '1192013';
+
+        if (id != null && id != "") {
+            GetSSS_studentNotfication();
+        }
+
+        function GetSSS_studentNotfication() {
+            $.ajax({
+                type: "GET",
+                url: "/BulletinAndNotifications/StudentNotifications",
+                aysnc: false,
+                //dataType: "json",
+                data: {
+                    PageName: "Hori",
+                },
+                success: function (data) {
+                    var notiListHtml = "";
+                    $.each(data, function () {
+                        var item = this;
+                        var content = "";
+                        var subject = "";
+                        var notiid = item.sbn_notification_id;
+                        subject = item.sbn_subject;
+                        if (item.sbn_notification_content != null) {
+                            content = item.sbn_notification_content;
+                        }
+                        notiListHtml += "<td><div  class='col-sm-12' onclick='OpenNotification(" + notiid + ")'><div class='alert fade alert-simple alert-success alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show'><i class='start-icon far fa-check-circle faa-tada animated' ></i ><strong class='font__weight-semibold'> " + subject + ": </strong> " + content+"</div ></div></td>";
+                    });
+                    $("#trNotificationList").append(notiListHtml);
+                },
+                failure: function (response) {
+                    bootbox.alert(response);
+                },
+                error: function (response) {
+                    bootbox.alert(response);
+                }
+            });
+        }// close GetSSS_studentNotfication
+
+        function OpenNotification(OpenNotification) {
+            window.open('/BulletinAndNotifications/EditNotification?iNotiID=' +OpenNotification+'&iIsOverView=1', '_self');
+        }
+
+
+        function SSS_CheckSSPDid() {
+            $.ajax({
+                type: "Post",
+                url: "/StudentProfile/GetSSPDid",
+                aysnc: false,
+                success: function (data) {
+                },
+                failure: function (response) {
+                },
+                error: function (response) {
+                }
+            });
+        }// close SSS_CheckSSPDid
+
+        ///sss module end
+    </script>
+
+
+    
+
+
+    <script>
+        //file size 200KB
+        $("input[type='file']").on("change", function () {
+            debugger;
+
+            var id = $(this).attr('id');
+            var class1 = $(this).attr('class');
+            if (class1 == "form-control mb-2 SignOnly" || class1 == "form-control mb-2 PhotoOnly") {
+
+                if (this.files[0].size > 200000) {
+                    bootbox.alert("Please upload file less than or equal to 200KB. Thanks!!");
+                    $(this).val('');
+                    if (class1 == "form-control mb-2 PhotoOnly") {
+                        const photo = document.getElementById('imgphotopreview');
+                        photo.setAttribute('src', '');
+                    } else if (class1 == "form-control mb-2 SignOnly") {
+                        const Sign = document.getElementById('imgsignpreview');
+                        Sign.setAttribute('src', '');
+                    }
+                    return false;
+                }
+
+
+                var allowedExtension = ['jpeg', 'jpg', 'png'];
+                var fileExtension = document.getElementById(id).value.split('.').pop().toLowerCase();
+                var isValidFile = false;
+
+                for (var index in allowedExtension) {
+
+                    if (fileExtension === allowedExtension[index]) {
+                        isValidFile = true;
+                        break;
+                    }
+                }
+
+                if (!isValidFile) {
+                    bootbox.alert('Allowed Extensions are : *.' + allowedExtension.join(', *.'));
+                    $(this).val('');
+                    return false;
+                }
+
+                return isValidFile;
+            }
+
+            var inputs = id.split("_");
+            if (class1 == 'medium-input uploadreevaluationdocument1' || inputs[0] == 'UploadQpFile') {
+                var fi = document.getElementById(id);
+                //// Check if any file is selected.
+                if (fi.files.length > 0) {
+                    for (var i = 0; i <= fi.files.length - 1; i++) {
+                        var fsize = fi.files.item(i).size;
+                        var file = Math.round((fsize / 1024));
+                        // The size of the file.
+                        if (file > 4096) {
+                            //toastr.error('Please select a file less than 3mb');
+                            bootbox.alert('Please select a PDF file less than 4MB');
+                            $('#' + id).val("");
+                        }
+                        else {
+                            var fileExtension = ['pdf'];
+                            var x = $(this).val();
+                            var a = x.split('.');
+
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            if (this.files[0].type != "application/pdf") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            var x = $(this).val();
+                            var a = x.split('.');
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                            if (this.files[0].type != "application/pdf") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                        }
+                    }
+                }
+            }
+            else if (class1 == 'medium-input uploaddocument') {
+                var fi = document.getElementById(id);
+                if (fi.files.length > 0) {
+                    for (var i = 0; i <= fi.files.length - 1; i++) {
+                        var fsize = fi.files.item(i).size;
+                        var file = Math.round((fsize / 1024));
+                        // The size of the file.
+                        if (file > 3120) {
+                            //toastr.error('Please select a file less than 3mb');
+                            bootbox.alert('Please select a PDF file less than 3MB');
+                            $('#' + id).val("");
+                        }
+                        else {
+                            var fileExtension = ['pdf'];
+                            var x = $(this).val();
+                            var a = x.split('.');
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            if (this.files[0].type != "application/pdf") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            var x = $(this).val();
+                            var a = x.split('.');
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                            if (this.files[0].type != "application/pdf") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                                $(this).val('');
+                            }
+                        }
+                    }
+                }
+            }
+            else if (id == "markSheetFile") {
+                if (this.files[0].size > 153600) {
+                    bootbox.alert("Please upload file less than or equal to 150KB. Thanks!!");
+                    $(this).val('');
+                    $('#lblfile').text("Choose file");
+                    //requestAnimFrame(e);
+                }
+            }
+            else if (class1 == "form-control paygovXlsx-file") {
+                debugger;
+                if (this.files[0].size > 2000000) {
+                    bootbox.alert("Please upload file less than or equal to 200KB. Thanks!!");
+                    $(this).val('');
+                    $('#lblfile').text("Choose file");
+                    //requestAnimFrame(e);
+                }
+            }
+            else if (class1 == 'medium-input uploadWorkOrder' || class1 == 'uploadWorkOrder') {
+                var fi = document.getElementById(id);
+                //// Check if any file is selected.
+                if (fi.files.length > 0) {
+                    for (var i = 0; i <= fi.files.length - 1; i++) {
+                        var fsize = fi.files.item(i).size;
+                        var file = Math.round((fsize / 1024));
+                        // The size of the file.
+                        if (file > 10240) {
+                            //toastr.error('Please select a file less than 3mb');
+                            bootbox.alert('Please select a file less than 10MB');
+                            $('#' + id).val("");
+                        }
+                        else {
+                            var fileExtension = ['zip', 'rar', '7zip'];
+                            var x = $(this).val();
+                            var a = x.split('.');
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.zip) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.rar) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            debugger
+                            if (this.files[0].type != "application/zip" && this.files[0].type != "application/x-zip-compressed" && this.files[0].type != "application/vnd.rar" && this.files[0].type != "application/x-7z-compressed") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.7zip) ");
+                                $(this).val('');
+                                requestAnimFrame(e);
+                            }
+                            var x = $(this).val();
+                            var a = x.split('.');
+                            if (a.length > 2) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.zipzip) ");
+                                $(this).val('');
+                            }
+                            if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.rarrar) ");
+                                $(this).val('');
+                            }
+                            if (this.files[0].type != "application/zip" && this.files[0].type != "application/x-zip-compressed" && this.files[0].type != "application/vnd.rar" && this.files[0].type != "application/x-7z-compressed") {
+                                bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.7zip7zip) ");
+                                $(this).val('');
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                debugger
+                if (this.files[0].size > 200000) {
+                    bootbox.alert("Please upload file less than or equal to 200KB. Thanks!!");
+                    $(this).val('');
+                    return false;
+                }
+                var fileExtension = ['jpeg', 'jpg', 'png', 'pdf'];
+                var x = $(this).val();
+                var a = x.split('.');
+                if (a.length > 2) {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', ') + "/Please verify upload the file with correct name(Example:text.pdf) ");
+                    $(this).val('');
+                    requestAnimFrame(e);
+                }
+                if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                    requestAnimFrame(e);
+                }
+                if (this.files[0].type != "application/pdf" && this.files[0].type != "image/jpeg" && this.files[0].type != "image/jpg" && this.files[0].type != "image/png") {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                    requestAnimFrame(e);
+                }
+                var fileExtension = ['jpeg', 'jpg', 'png', 'pdf'];
+                var x = $(this).val();
+                var a = x.split('.');
+                if (a.length > 2) {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                }
+                if ($.inArray(x.split('.').pop().toLowerCase(), fileExtension) == -1) {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                }
+                if (this.files[0].type != "application/pdf" && this.files[0].type != "image/jpeg" && this.files[0].type != "image/jpg" && this.files[0].type != "image/png") {
+                    bootbox.alert("Only formats are allowed : " + fileExtension.join(', '));
+                    $(this).val('');
+                }
+            }
+        });
+        function downloadFile(folder, filename) {
+            // e.preventDefault();  //stop the browser from following
+            //$.ajax({
+            //    url: "/Admission/DownloadFile",
+            //    type: "POST",
+            //    async:false,
+            //    data: {
+
+            //        folder: folder,
+            //        filename: filename
+            //    },
+
+            //    success: function (data) {
+            //        window.open(data, '_blank');
+            //    }
+            //});
+            window.open("/Admission/DownloadFile?folder=" + folder + "&filename=" + filename, "_blank");
+        }
+        var themeColor;
+        var originalSize = 16;
+
+        //$(document).ajaxStart(function () {
+        //    $('#loading').show();
+        //});
+        //$(document).ajaxStop(function () {
+        //    $('#loading').hide();
+        //});
+
+
+        //$(document)
+        //    .ajaxStart(function () {
+        //        $('#AjaxLoader').show();
+        //    })
+        //    .ajaxStop(function () {
+        //        $('#AjaxLoader').hide();
+        //    });
+        $(document).ready(function () {
+            var _knlan = $('.knlan');
+            var _EnLan = $('.Enlan');
+            if (sessionStorage.getItem('Lang') === '0') {
+                _EnLan.hide();
+                _knlan.show();
+                $('#chnageLan').val('English');
+
+            }
+            else {
+                _knlan.hide();
+                _EnLan.show();
+                document.title = 'UUCMS - Unified University College Management System'
+                $('#chnageLan').val('ಕನ್ನಡ');
+
+            }
+            //session timeout
+            //
+            var IdealTimeOut = 1800; //30 min | 1200
+            var idleSecondsTimer = null;
+            var idleSecondsCounter = 0;
+            document.onclick = function () { idleSecondsCounter = 0; };
+            document.onmousemove = function () { idleSecondsCounter = 0; };
+            document.onkeypress = function () { idleSecondsCounter = 0; };
+            idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+
+
+
+            function CheckIdleTime() {
+                idleSecondsCounter++;
+                if (idleSecondsCounter >= IdealTimeOut) {
+                    window.clearInterval(idleSecondsTimer);
+                    bootbox.alert("Your Session has expired. Please login again.");
+                    window.location.href = "/Login/LogOut";
+                }
+            }
+
+            $('#chnageLan').click(function () {
+                _knlan.toggle();
+                _EnLan.toggle();
+                sessionStorage.getItem('Lang');
+
+                if ($('.knlan').is(":visible")) {
+                    $('#chnageLan').val('English');
+                    sessionStorage.setItem('Lang', '0');
+                    document.title = 'UUCMS - ಸಮಗ್ರ ವಿಶ್ವವಿದ್ಯಾಲಯ ಮತ್ತು ಕಾಲೇಜು ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ '
+                }
+                else {
+                    $('#chnageLan').val('ಕನ್ನಡ');
+
+                    sessionStorage.setItem('Lang', '1');
+                    document.title = 'UUCMS - Unified University College Management System'
+                }
+            })
+
+
+
+        });
+
+        function changeColor() {
+            sessionStorage.setItem("themeColor", "black");
+            myfunction();
+        }
+
+        function defaultColor() {
+            sessionStorage.setItem("themeColor", "transparent");
+            myfunction();
+        }
+
+        function myfunction() {
+            if (sessionStorage.getItem("currentFontSize") != null || sessionStorage.getItem("currentFontSize") != '') {
+                $('body, *').css('font-size', sessionStorage.getItem("currentFontSize") + 'px');
+            }
+            if (sessionStorage.getItem("themeColor") === "black") {
+                themeColor = sessionStorage.getItem("themeColor");
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th, footer').css("background-color", themeColor);
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th').css("color", "white");
+                $(".captcha-img").css("background-color", "white")
+
+            } else if (sessionStorage.getItem("themeColor") === "transparent") {
+                //themeColor = sessionStorage.getItem("themeColor");
+                //$('body, *').css("background-color", themeColor)
+                //$('body, *').css("color", "black")
+                $(".captcha-img").css("background-color", "transparent")
+                sessionStorage.clear();
+                location.reload();
+
+            }
+
+        }
+
+        $('#increasetext').click(function () {
+            //curSize = originalSize + 2;
+            curSize = sessionStorage.getItem("currentFontSize") != null ? (JSON.parse(sessionStorage.getItem("currentFontSize")) + 2) : originalSize + 2
+            console.log(curSize)
+            if (curSize <= 20) {
+                $('body, *').css('font-size', curSize);
+                sessionStorage.setItem("currentFontSize", curSize)
+            }
+
+        });
+
+        $('#resettext').click(function () {
+            sessionStorage.removeItem("currentFontSize");
+            location.reload();
+        });
+
+        $('#decreasetext').click(function () {
+            curSize = sessionStorage.getItem("currentFontSize") != null ? (JSON.parse(sessionStorage.getItem("currentFontSize")) - 2) : originalSize - 2;
+            if (curSize >= 14) {
+                $('body, *').css('font-size', curSize);
+                sessionStorage.setItem("currentFontSize", curSize)
+            }
+
+        });
+        function GetYear(dateObj) {
+           
+            var year = $(dateObj).datepicker({
+                defaultDate: new Date(),
+                changeMonth: false,
+                changeYear: true,
+                numberOfMonths: 1,
+                dateFormat: 'yy',
+                maxDate: '+0',
+                yearRange: "-100:-0",
+            });
+
+            return dateObj;
+        }
+    </script>
+
+    <div class="modal fade" id="copyrightPolicy" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><p><label class="knlan" style="display: none;">ಹಕ್ಕು ಸ್ವಾಮ್ಯ ನೀತಿ</label><label class="Enlan">Copyright Policy</label></p></h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body Enlan">
+                    <p>Material featured on this site may be reproduced free of charge in any format or media without requiring specific permission. This is subject to the material being reproduced accurately and not being used in a derogatory manner or in a misleading context. Where the material is being published or issued to others, the source must be prominently acknowledged.However, the permission to reproduce this material does not extend to any material on this site, which is explicitly identified as being the copyright of a third party. Authorisation to reproduce such material must be obtained from the copyright holders concerned.</p>
+                    <div class="knlan" style="display: none;">
+                        <ol style="text-align:justify">
+                            <p style="margin-bottom:0px !important">
+                                ಹಕ್ಕು ಸ್ವಾಮ್ಯ ನೀತಿ
+
+                                (ಪ್ರಕಟಿತ ಮಾಹಿತಿ ಮುಕ್ತ ಬಳಕೆಗೆ ಲಭ್ಯವಿದ್ದರೆ)
+                            </p>
+                        </ol>
+                        <ol style="text-align:justify">
+                            <li>ಈ ಜಾಲತಾಣದಲ್ಲಿ ಪ್ರಕಟವಾಗಿರುವ ಮಾಹಿತಿಯನ್ನು ಮರು ಪ್ರಕಟಿಸಲು ಇ-ಮೇಲ್ ಮೂಲಕ ನಮಗೆ ಅಥವಾ ಜಾಲತಾಣ ಒಡೆತನದ ಸಂಸ್ಥೆಗೆ ತಿಳಿಸಿ ಮುಕ್ತವಾಗಿ ಬಳಸಿಕೊಳ್ಳಬಹುದು.</li>
+
+                            <li>ಮಾಹಿತಿಯನ್ನು ಯಥಾವತ್ತಾಗಿ ಮರುಪ್ರಕಟಿಸಬಹುದೇ ಹೊರತು ಅದನ್ನು ತಿರುಚುವುದಕ್ಕಾಗಲಿ ಅಥವಾ ದಾರಿ ತಪ್ಪಿಸುವ ವಿಧಾನದಲ್ಲಿ ಬಳಕೆ ಮಾಡುವಂತಿಲ್ಲ.</li>
+
+                            <li>ಮರು ಪ್ರಕಟಿಸುವಾಗ ಮತ್ತು ಮರು ಪ್ರಕಟಣೆಗೆ ಶಿಫಾರಸ್ಸು ಮಾಡುವಾಗ ಮಾಹಿತಿಯ ಮೂಲವನ್ನು ನಮೂದಿಸಬೇಕು.</li>
+
+                            <li>ಮೂರನೇ ವ್ಯಕ್ತಿ ಮರು ಪ್ರಕಟಿಸಲು ಅವಕಾಶವಿರುವುದಿಲ್ಲ. ಒಂದು ವೇಳೆ ಮೂರನೇ ವ್ಯಕ್ತಿ ಮರು ಪ್ರಕಟಿಸಲು ಬಯಸಿದರೆ ಹಕ್ಕುಸ್ವಾಮ್ಯ ಹೊಂದಿರುವವರ ಅನುಮತಿ ಪಡೆದುಕೊಳ್ಳಬೇಕು.</li>
+                        </ol>
+                        <ol style="text-align:justify">
+                            <p style="margin-bottom:0px !important">
+                                ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿ
+
+                                (ಪ್ರಕಟಿತ ವಿಷಯಗಳ ಮರುಬಳಕೆಗೆ ನಿಬಂಧನೆಗಳಿದ್ದರೆ)
+                            </p>
+                        </ol>
+                        <ol style="text-align:justify">
+                            <li> ಈ ಜಾಲತಾಣದಲ್ಲಿ ಪ್ರಕಟವಾಗಿರುವ ಮಾಹಿತಿಯು ಹಕ್ಕುಸ್ವಾಮ್ಯಕ್ಕೆ ಒಳಪಟ್ಟಿರುವುದರಿಂದ ಅವುಗಳ ಮರು ಪ್ರಕಟಣೆಗೆ ಇ - ಆಡಳಿತ ಕೇಂದ್ರ ಇಲಾಖೆಯ ಅನುಮತಿ ಕಡ್ಡಾಯವಾಗಿದೆ.</li>
+
+                            <li>ಅನುಮತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು  ಗೆ ಇ-ಮೇಲ್ ಮೂಲಕ ಮನವಿ ಮಾಡಬಹುದು.</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="externalpolicy" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><label class="knlan" style="display: none;">ಬಾಹ್ಯ ಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ</label><label class="Enlan">External linking Policy</label></h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="Enlan">
+                        <ol style="text-align:justify">
+                            We do not object to you linking directly to the information that is hosted on our site and no prior permission is required for the same. However, we would like you to inform us about any links provided to our site so that you can be informed of any changes or updations therein. Also, we do not permit our pages to be loaded into frames on your site. Our Department’s pages must load into a newly opened browser window of the user.
+                        </ol>
+                    </div>
+                    <div class="knlan" style="display: none;">
+                        <ol style="text-align:justify">
+
+
+                            <p>
+                                ಬಾಹ್ಯ ಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ (ಸಂಬಂಧಿತ ಇಲಾಖೆ ತಮ್ಮ ಜಾಲತಾಣದಲ್ಲಿ ಹೈಪರ್ಲಿಂಕ್ ಮಾಡಲು ಅನುಮತಿ ಬೇಕಿಲ್ಲವಾದರೆ)
+
+                                ನಮ್ಮ ಜಾಲತಾಣದಲ್ಲಿ ಪ್ರಕಟವಾದ ಮಾಹಿತಿಯನ್ನು ನೇರವಾಗಿ ಲಿಂಕ್ ಮಾಡುವುದಕ್ಕೆ ಯಾವುದೇ ಆಕ್ಷೇಪ ಇರುವುದಿಲ್ಲ.
+                                ನಮ್ಮ ಪುಟಗಳು ನಿಮ್ಮ ಜಾಲತಾಣದ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ಪ್ರಕಟವಾಗುವುದನ್ನು ನಾವು ಬಯಸುವುದಿಲ್ಲವಾದ್ದರಿಂದ ಬಳಕೆದಾರರಿಗೆ ಅದು ಪ್ರತ್ಯೇಕ ವಿಂಡೋನಲ್ಲಿ ತೆರೆಯುವಂತೆ ಇರಬೇಕು.
+                                ಬಾಹ್ಯ ಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ (ಇಲಾಖೆ ಜಾಲತಾಣದಲ್ಲಿ ಹೈಪರ್ಲಿಂಕ್ ಮಾಡಲು ಅನುಮತಿ ಕಡ್ಡಾಯವಾಗಿದ್ದರೆ)
+
+                                ಈ ಜಾಲತಾಣದಲ್ಲಿ ಯಾವುದೇ ಹೈಪರ್ಲಿಂಕ್ ಗಳನ್ನು ನೀಡುವುದು ಮತ್ತು ಅದರ ಸ್ವರೂಪವನ್ನು ತಿಳಿಸುವುದಕ್ಕೆ ಅನುಮತಿ ಕಡ್ಡಾಯವಾಗಿರುತ್ತದೆ.
+                                ಗೆ ಇ-ಮೇಲ್ ಮೂಲಕ ಮನವಿ ಮಾಡಿ ಇ - ಆಡಳಿತ ಕೇಂದ್ರ ಇಲಾಖೆಯ ಅನುಮತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಬಹುದು.
+                                ಸರ್ಕಾರಿ ಜಾಲತಾಣಗಳನ್ನು ಬಿಡುವ ಮುನ್ನ ನೀಡಬೇಕಾದ ಸೂಚನೆ ಈ ಸಂಪರ್ಕಕೊಂಡಿ ಬೇರೊಂದು ಜಾಲತಾಣ ತೆರೆಸುತ್ತದೆ. ಆ ಜಾಲತಾಣದಲ್ಲಿನ ವಿಷಯ ವಸ್ತುಗಳ ಕುರಿತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಬೇಕಾದರೆ, ಅದೇ ಜಾಲತಾಣದಲ್ಲಿ ನಮೂದಾಗಿರುವ ಸಂಬಂಧಿತರನ್ನು ಸಂಪರ್ಕಿಸುವುದು.
+                            </p>
+
+                        </ol>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="securityPolicy" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <p><label class="knlan" style="display: none;">ಭದ್ರತಾ ನೀತಿ</label><label class="Enlan">Security Policy</label></p>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="Enlan">
+                        <ol style="text-align:justify">
+                            <li>
+                                For site security purposes and to ensure that this service remains available to all users, this Government computer system employs commercial software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage.
+
+                            </li>
+
+                            <li>
+                                Except for authorized law enforcement investigations, no other attempts are made to identify individual users or their usage habits. Raw data logs are used for no other purposes and are scheduled for regular deletion.
+
+                            </li>
+
+                            <li>
+                                Unauthorized attempts to upload information or change information on this service are strictly prohibited and may be punishable under the Indian IT Act (2000).
+
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="knlan" style="display: none;">
+                        <ol style="text-align:justify">
+                            <p>
+                                ಈ ಸರ್ಕಾರಿ ಜಾಲತಾಣವು ಎಲ್ಲರ ಬಳಕೆಗೆ ನೀಡುವುದಕ್ಕೆ, ಅನಧಿಕೃತ ಬಳಕೆದಾರರು ಜಾಲತಾಣ ಪ್ರವೇಶಿಸುವುದು, ಜಾಲತಾಣದಲ್ಲಿನ ಮಾಹಿತಿಯನ್ನು ತಿರುಚುವುದು ಅಥವಾ ಹಾನಿ ಮಾಡುವುದನ್ನು ತಡೆಯುವುದಕ್ಕೆ ಮತ್ತು ಜಾಲತಾಣದ ಭದ್ರತೆ ದೃಷ್ಠಿಯಿಂದ ಹಾಗೂ ಸಂಪರ್ಕ ದಟ್ಟಣೆ ನಿವಾರಣೆಗಾಗಿ ಕಮರ್ಷಿಲ್ ಸಾಫ್ಟವೇರ್ ಪ್ರೋಗ್ರಾಮ್ ಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಅಧಿಕೃತ ಕಾನೂನ ಸಂಸ್ಥೆಗಳನ್ನು ಹೊರತು ಪಡೆಸಿ, ಸಂದರ್ಶಕರ ಅಥವಾ ಬಳಕೆದಾರನ್ನು ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಲು ಯಾವುದೇ ಪ್ರಯತ್ನಗಳು ಮಾಡಲ್ಪಡುವುದಿಲ್ಲ. ಮಾಹಿತಿಯು ನಿಯಮಿತ ಅಳಿಸುವಿಕೆಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.
+                            </p>
+                        </ol>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="privacyPolicy" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <p><label class="knlan" style="display: none;">ಖಾಸಗಿತನ ನೀತಿ</label><label class="Enlan">Privacy Policy</label></p>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body Enlan">
+                    <ol style="text-align:justify">
+                        <li>
+
+                            Thanks for visiting website of PGRS, and reviewing our privacy policy.
+                        </li>
+
+                        <li>
+                            We collect no personal information, like names or addresses, when you visit our website. If you choose to provide that information to us, it is only used to fulfil your request for information.
+                        </li>
+
+                        <li>
+
+                            We do collect some technical information when you visit to make your visit seamless. The section below explains how we handle and collect technical information when you visit our website.
+
+                        </li>
+
+                        <li>
+
+                            Information collected and stored automatically.
+                        </li>
+
+                        <li>
+                            When you browse, read pages, or download information on this website, we automatically gather and store certain technical information about your visit.
+                        </li>
+
+                        <li>
+                            This information never identifies who you are. The information we collect and store about your visit is listed below:
+                        </li>
+
+                        <li>
+                            The Internet domain of your service provider (e.g. mtnl.net.in) and IP address (an IP address is a number that is automatically assigned to your computer whenever you are surfing the web) from which you access our website.
+                        </li>
+
+                        <li>
+                            The type of browser (such as Firefox, Netscape, or Internet Explorer) and operating system (Windows, Linux) used to access our site.
+                        </li>
+
+                        <li>
+                            The date and time you access/accessed our site.
+                        </li>
+
+                        <li>
+                            The pages/URLs you have visited, and If you reached this website from another website, the address of that referring website.
+                        </li>
+
+                        <li>
+                            This information is only used to help us make the site more useful for you. With this data, we learn about the number of visitors to our site and the types of technology our visitors use. We never track or record information about individuals and their visits.
+                        </li>
+                    </ol>
+                    <div class="knlan" style="padding: 1rem; display: none;">
+                        <ol style="text-align:justify">
+
+                            <li> (ಜಾಲತಾಣವು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸದೇ ಇದ್ದರೆ)</li>
+
+
+                            <li>ಸಾಮಾನ್ಯ ನಿಯಮಾನುಸಾರ, ಸಂದರ್ಶಕರು ಈ ಜಾಲತಾಣಕ್ಕೆ ಭೇಟಿ ನೀಡಿದಾಗ ಅವರ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಈ ಜಾಲತಾಣದಲ್ಲಿ ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ. ಸಂದರ್ಶಕರು ತಾವಾಗೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನೀಡಿದರೆ ಮಾತ್ರ ಪಡೆಯಲಾಗುತ್ತದೆ.</li>
+
+
+                            <h4>ಸಂದರ್ಶಕರ ಮಾಹಿತಿ</h4>
+
+
+                            <li>ಸಂದರ್ಶಕರು ಈ ಜಾಲತಾಣಕ್ಕೆ ಸಂದರ್ಶಿಸಿರುವುದನ್ನು ಸಾಂಖಿಕವಾಗಿ ದಾಖಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಈ ಜಾಲತಾಣಕ್ಕೆ ನೀವು ಭೇಟಿ ನೀಡುವಾಗ ಉಪಯೋಗಿಸಿದ ಬ್ರೌಸರ್, ಸರ್ವರ್ ಮತ್ತು ಡೊಮೇನ್, ದಿನಾಂಕ ಮತ್ತು ಸಮಯ, ಡೌನ್ಲೋಡ್ ಮಾಡಿಕೊಂಡ ದಾಖಲೆಗಳನ್ನು ದಾಖಲಿಸಲಾಗುತ್ತದೆ. ಆದರೆ, ಸಂದರ್ಶಕರ ಗುರುತು ಮತ್ತು ಅವರ ಬ್ರೌಸಿಂಗ್ ಚಟುವಟಿಕೆಗಳನ್ನು ನಾವು ಗುರುತಿಸುವುದಿಲ್ಲ (ನ್ಯಾಯಾಲಯಗಳು ವಾರೆಂಟ್ ಮೂಲಕ ಸಂದರ್ಶಕರ ವಿವರ ಪರೀಕ್ಷಿಸಲು ಬಯಸಿದ ಸಂದರ್ಭಹೊರತು ಪಡೆಸಿ.)</li>
+
+
+                            <h4>ಕುಕೀಸ್</h4>
+
+
+                            <li>ಸಂದರ್ಶಕರು ಜಾಲತಾಣದಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳುವಾಗ ಜಾಲತಾಣಗಳು ತಂತ್ರಾಂಶದ ತುಣುಕನ್ನು ನೀಡುತ್ತವೆ. ಅದಕ್ಕೆ ಕುಕೀಸ್ ಎನ್ನಲಾಗುತ್ತದೆ. ಅಂತಹ ಯಾವುದೇ ಕುಕೀಸ್ ಗಳನ್ನು ಈ ಜಾಲತಾಣದಲ್ಲಿ ಬಳಸಲಾಗಿಲ್ಲ.</li>
+
+
+                            <h4>ಇ-ಮೇಲ್ ನಿರ್ವಹಣೆ</h4>
+
+
+                            <li>ಸಂದರ್ಶಕರು ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಿದಾಗ ಮಾತ್ರ ಆ ಕ್ಷಣಕ್ಕೆ ಅವರ ಇ-ಮೇಲ್ ಧಾಖಲಾಗುತ್ತದೆ ಮತ್ತು ಅವರಿಗೆ ಮಾಹಿತಿಯನ್ನು ನೀಡುವುದಕ್ಕೆ ಮಾತ್ರ ಅದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಅದನ್ನು ಕಾಂಟ್ಯಾಕ್ಟ್ ಲಿಸ್ಟ್ ನಲ್ಲಿ ಸೇರಿಸಿಕೊಳ್ಳಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಇನ್ಯಾವುದೇ ಚಟುವಟಿಕೆಗೆ ಅದನ್ನು ಬಳಸಿಕೊಳ್ಳಲಾಗುವುದಿಲ್ಲ. ಸಂದರ್ಶಕರ ಗಮನಕ್ಕೆ ತಾರದೆ ಅದನ್ನು ಬಹಿರಂಗಪಡಿಸುವುದಿಲ್ಲ.</li>
+
+
+                            <h4>ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಸಂಗ್ರಹ</h4>
+
+
+                            <li>ಸಂದರ್ಶಕರು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಕೇಳಿದರೆ ಅಥವಾ ತಿಳಿಸಿದರೆ ಅದನ್ನು ಹೇಗೆ ಉಪಯೋಗಿಸಲಾಗುವುದು ಎನ್ನುವುದನ್ನು ತಿಳಿಸಲಾಗುತ್ತದೆ. ಇಲ್ಲಿ ತಿಳಿಸಲಾಗುವ ಮಾಹಿತಿಯಲ್ಲಿ ನಿಮಗೆ ನಂಬಿಕೆ ಬಾರದೇ ಇದ್ದಲ್ಲಿ ಅಥವಾ ಆ ವಿಚಾರಗಳ ಕುರಿತು ಅಭಿಪ್ರಾಯಗಳನ್ನು ವ್ಯಕ್ತಪಡಿಸಬಯಸಿದರೆ “ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ” ವಿಭಾದಲ್ಲಿರುವ ವೆಬ್ ಮಾಸ್ಟರ್ ಗಳನ್ನು ಸಂಪರ್ಕಿಸುವುದು ಅವಶ್ಯವಾಗಿದೆ.</li>
+
+
+                            <li>ಸೂಚನೆ: ‘ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ’ ಎನ್ನುವ ಗೌಪ್ಯ ಹೇಳಿಕೆಯಲ್ಲಿ ನಿಮ್ಮ ಗುರುತು ಅಥವಾ ಸುಲಭವಾಗಿ ಗುರುತಿಸಲು ಸಹಕರಿಸುವ ಅಂಶಗಳನ್ನು ನಮೂದಿಸಲಾಗಿರುತ್ತದೆ.​</li>
+
+
+                            <h4>ಸಂದರ್ಶಕರು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ನೀಡಿದರೆ</h4>
+
+
+                            <li> ಇಲಾಖೆ ಸಂದರ್ಶಕರ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ. ಒಂದು ವೇಳೆ ಸಂದರ್ಶಕರು ತಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಮರು ಪ್ರತಿಕ್ರಿಯೆ, ಹಿಮ್ಮಾಹಿತಿ, ಕೇಳಿದ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರ ಪಡೆಯಲು ಬಯಸಿ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯಾದ ಇ-ಮೇಲ್, ಅಂಚೆ ವಿಳಾಸವನ್ನು “ಸಬ್ಮಿಟ್(submit)” ಮಾಡಿದರೆ ಮಾತ್ರ ಆ ಮಾಹಿತಿಯನ್ನು ಮರು ಪ್ರತಿಕ್ರಿಯೆ ಉದ್ದೇಶಕ್ಕಾಗಿ ಪಡೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ. ಸಂದರ್ಶಕರು ಕೇಳಿದ ಮಾಹಿತಿಯು ಬೇರೊಂದು ಇಲಾಖೆ ಅಥವಾ ಏಜೆನ್ಸಿಗೆ ಸಂಬಂಧಿಸಿದ್ದರೆ ಅವರೊಂದಿಗೆ ಸಂದರ್ಶಕರ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದು. ಕಾನೂನಿಗೆ ನಿಮ್ಮ ಮಾಹಿತಿ ಅವಶ್ಯವಾಗಿದ್ದರೆ ಆಗಲೂ ಹಂಚಿಕೊಳ್ಳಬಹುದು.</li>
+
+
+                            <li> ಖಾಸಗಿ ಅಥವಾ ಲಾಭದಾಯಕ ವ್ಯವಹಾರದ ಉದ್ದೇಶಕ್ಕೆ ಸಂದರ್ಶಕರ ವಿವರವನ್ನು ಸಿದ್ಧಪಡಿಸುವುದಾಗಲಿ ಅಥವಾ ಸಂಗ್ರಹಿಸುವುದಾಗಲಿ ಇಲಾಖೆ ಮಾಡುವುದಿಲ್ಲ. ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುವುದಕ್ಕೆ ಮತ್ತು ಕಮೆಂಟ್ ಮಾಡುವುದಕ್ಕೆ ಸಂದರ್ಶಕರ ಇ-ಮೇಲ್ ನೀಡುವುದು ಕಡ್ಡಾಯವಾಗಿರುತ್ತದೆ, ಅದರ ಹೊರತು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನೀಡುವುದಕ್ಕೆ ಇಲಾಖೆ ಪ್ರೋತ್ಸಾಹಿಸುವುದಿಲ್ಲ.</li>
+
+
+                            <h4>ಜಾಲತಾಣ ಸುರಕ್ಷತೆ</h4>
+
+
+                            <li>ಈ ಸರ್ಕಾರಿ ಜಾಲತಾಣದ ಮಾಹಿತಿಯನ್ನು ಎಲ್ಲರಿಗೂ ನೀಡುವುದಕ್ಕೆ, ಅನಧಿಕೃತ ಬಳಕೆದಾರರು ಜಾಲತಾಣ ಪ್ರವೇಶಿಸುವುದು, ಜಾಲತಾಣದಲ್ಲಿನ ಮಾಹಿತಿಯನ್ನು ತಿರುಚುವುದು ಅಥವಾ ಹಾನಿಮಾಡುವುದನ್ನು ತಡೆಯುವುದಕ್ಕೆ ಮತ್ತು ಜಾಲತಾಣದ ಭದ್ರತೆ ದೃಷ್ಠಿಯಿಂದ ಹಾಗೂ ಸಂಪರ್ಕದಟ್ಟಣೆ ನಿವಾರಣೆಗಾಗಿ ಕಮರ್ಷಿಯಲ್ ಸಾಫ್ಟವೇರ್ ಪ್ರೋಗ್ರಾಮ್ ಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.</li>
+
+
+                            <li>
+                                ಅಧಿಕೃತ ಕಾನೂನು ಸಂಸ್ಥೆಗಳನ್ನು ಹೊರತುಪಡೆಸಿ, ಸಂದರ್ಶಕರ ಅಥವಾ ಬಳಕೆದಾರನ್ನು ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಲು ಯಾವುದೇ ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಲ್ಪಡುವುದಿಲ್ಲ. ಸಂದರ್ಶಕರ ಮಾಹಿತಿಯು ನಿಯಮಿತ ಅಳಿಸುವಿಕೆಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.
+
+
+                            </li>
+                            <li>
+                                ಅನಧಿಕೃತರು ಈ ಜಾಲತಾಣದಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸುವುದು, ಬದಲಾಯಿಸುವುದು ಕಾನೂನು ಬಾಹೀರವಾಗಿದ್ದು, ಮಾಹಿತಿ ತಂತ್ರಜ್ಞಾನ ಕಾಯಿದೆ(2000)ರ ಅಡಿಯಲ್ಲಿ ದಂಡನಾರ್ಹವಾಗಿದೆ.
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="help" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><p><label class="knlan" style="display: none;">ಸಹಾಯ</label><label class="Enlan">Help</label></p></h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="Enlan">
+                        <p>
+                            The information available as an attachment is in Portable Document Format (PDF). Though the website is tested in various environments and browsers but to view the information properly, the browser needs to have the required plug-ins or software. For example, the Adobe Acrobat Reader is required to see all the pdfs. In case the system does not have requisite software, it may be downloaded from internet. The table given below depicts the required plug-ins needed to view the information in various file formats. Required Plug-ins / Browsers
+                        </p>
+                        <h3>
+                            Help of Various File formats :
+                        </h3>
+                    </div>
+
+                    <div class="knlan" style="display: none;">
+
+
+
+                        <ol style="text-align: justify">
+
+                            <li>
+                                ಜಾಲತಾಣದಲ್ಲಿನ ಪ್ರತಿ ವಿಭಾಗದಲ್ಲಿರುವ ಮಾಹಿತಿಯನ್ನು ಸಂಕ್ಷಿಪ್ತವಾಗಿ ನೀಡಲಾಗಿರುತ್ತದೆ.
+                            </li>
+
+                            <li>
+                                ಈ ಜಾಲತಾಣದಲ್ಲಿ ಪ್ರಕಟವಾಗಿರುವ ಮಾಹಿತಿಯು ಎಚ್.ಟಿ.ಎಂ.ಎಲ್, ಪಿಡಿಎಫ್ ಅಥವಾ ಜೆಪಿಇಜಿ ಮಾದರಿಯಲ್ಲಿರಬಹುದು. ಪಿ.ಡಿ.ಎಫ್. ದಾಖಲೆಗಳನ್ನು ಓದಲು “ಅಡೊಬೆ ರೀಡರ್” ತಂತ್ರಾಂಶವು ಬಳಕೆದಾರರ ಕಂಪ್ಯೂಟರ್ ಅಥವಾ ಸಿಸ್ಟಮ್ ನಲ್ಲಿ ಇರಬೇಕಾಗಿರುತ್ತದೆ. ತಂತ್ರಾಂಶ ಇಲ್ಲವಾದಲ್ಲಿ http://www.adobe.com/products/acrobat/readstep2.html ಇಲ್ಲಿಗೆ ಲಾಗಿನ್ ಆಗಿ ಉಚಿತವಾಗಿ ತಂತ್ರಾಂಶವನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿಕೊಳ್ಳಬಹುದು.
+                            </li>
+
+
+                            <li>
+                                ಈ ಜಾಲತಾಣದಲ್ಲಿ ಪ್ರಕಟವಾದ ವಿಡಿಯೋ ಅಥವಾ ಆಡಿಯೋ ಕಡತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಅಡೋಬೆ ಫ್ಲ್ಯಾಶ್ ಪ್ಲೇಯರ್ ತಂತ್ರಾಂಶವು ಬಳಕೆದಾರರ ಕಂಪ್ಯೂಟರ್ ಅಥವಾ ಸಿಸ್ಟಮ್ ನಲ್ಲಿ ಇರಬೇಕಾಗುತ್ತದೆ. ತಂತ್ರಾಂಶವು ಇಲ್ಲವಾದಲ್ಲಿ https://www.adobe.com/products/flashplayer.html ಇಲ್ಲಿಗೆ ಲಾಗಿನ್ ಆಗಿ ಉಚಿತವಾಗಿ ತಂತ್ರಾಂಶವನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿಕೊಳ್ಳಬಹುದು.
+                            </li>
+
+
+                            <li>ಅಂಧರಿಗೂ ಈ ಜಾಲತಾಣ ಬಳಕೆ ಸ್ನೇಹಿಯಾಗಿ ರೂಪಿಸಲಾಗಿದೆ. ಅದಕ್ಕಾಗಿ “ಇ-ಸ್ಪೀಕ್” ತಂತ್ರಾಂಶವನ್ನು ಅಥವಾ ಸಮಾನಾಂತರ ತಂತ್ರಾಂಶಗಳನ್ನು (ಜಾಲತಾಣದ ಅಡಿಟಿಪ್ಪಣಿಯಲ್ಲಿರುವ screen reader access ನ್ನು ಪರಿಶೀಲಿಸಿ) ಬಳಕೆದಾರರ ಕಂಪ್ಯೂರ್ ನಲ್ಲಿ ಅಳವಡಿಸಿಕೊಳ್ಳಬೇಕು.</li>
+
+
+                            <li>ವರ್ಡ್, ಎಕ್ಸೆಲ್, ಪವರ್ ಪಾಯಿಂಟ್ ಪ್ರೆಸೆಂಟೆಷನ್ ಗಳಲ್ಲಿನ ಮಾಹಿತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಸಂಬಂಧಿಸಿದ ತಂತ್ರಾಂಶಗಳನ್ನು ಹೊಂದಿರಬೇಕು.</li>
+
+
+                            <li>ಮಾಹಿತಿ ಹುಡುಕುವುದು</li>
+
+
+                            <li>
+                                ಬಳಕೆದಾರರಿಗೆ ಅನುಕೂಲವಾಗಲೆಂದು ಈ ಜಾಲತಾಣದಲ್ಲಿ ಆಂತರಿಕ ಮಾಹಿತಿಯನ್ನು ಹುಡುಕುವುದಕ್ಕೆ “ ಇಲ್ಲಿ ಹುಡುಕಿ” ಅವಕಾಶವನ್ನು ನೀಡಲಾಗಿದೆ. ಇಲ್ಲಿ ಕನ್ನಡದಲ್ಲೇ ಅಕ್ಷರ ಜೋಡನೆಗೆ ಅವಕಾಶವಿದೆ. ಕಡ್ಡಾಯವಾಗಿ ಕನ್ನಡ “ಯೂನಿಕೋಡ್ ಫಾಂಟ್” ಗಳನ್ನು ಮಾತ್ರ ಬಳಸಬೇಕು.ಇಂಗ್ಲಿಷ್ ನಲ್ಲೂ ಹುಡುಕುವುದಕ್ಕೆ ಅವಕಾಶವಿದೆ.
+                            </li>
+
+
+                            <li>
+                                ಅಂತರ್ಜಾಲ ಸೌಲಭ್ಯ
+                            </li>
+
+
+                            <li>
+                                ಅಂತರ್ಜಾಲ ಸಂಪರ್ಕ ನಿಧಾನವಾಗಿದ್ದಾಗ ಅಥವಾ ಅಸಮರ್ಪಕವಾಗಿದ್ದಾಗ ಜಾಲತಾಣದ ವಿನ್ಯಾಸದಲ್ಲಿ ಬದಲಾವಣೆ ಗೋಚರಿಸಬಹುದು ಅಥವಾ ಉಪ ಉಪಟಗಳು ತೆರೆದುಕೊಳ್ಳದೇ ಇರಬಹುದು.
+                            </li>
+                        </ol>
+                        <h3>
+                            ಮಾಹಿತಿಯನ್ನು ವೀಕ್ಷಿಸಲು ಮತ್ತು ಪಡೆದುಕೊಳ್ಳಲು
+                        </h3>
+
+                    </div>
+                    <!--<div class="table" style="background-color:#fff;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Document Type
+                                    </td>
+                                    <td>
+                                        Download (External website that opens in a new window)
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    PDF content
+                                </td>-->
+                    
+                    <!--</tr>
+
+                            <tr>
+                                <td>
+                                    Word files
+                                </td>
+                                <td>
+                                    <img src="~/Content/policies/images/Word.png" style="height:20px" />
+                                    <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANk" title="External site that opens in a new window" style="color:#0033ff">
+                                        Word Viewer (in any version till 2003)
+                                    </a> - Microsoft Office Compatibility Pack for Word (for 2007 version)
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Excel files
+                                </td>
+                                <td>
+                                    <img src="~/Content/policies/images/Excel.png" style="height:20px" />
+                                    <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANk" title="External site that opens in a new window" style="color:#0033ff">
+                                        Excel Viewer 2003 (in any version till 2003)
+                                    </a> - Microsoft Office Compatibility Pack for Excel (for 2007 version)
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    PowerPoint Presentations
+                                </td>
+                                <td>
+                                    <img src="~/Content/policies/images/powerpoint.png" style="height:20px" />
+                                    <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANk" title="External site that opens in a new window" style="color:#0033ff">
+                                        PowerPoint Viewer 2003 (in any version till 2003)
+                                    </a> - Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Flash content
+                                </td>
+                                <td>
+                                    <img src="~/Content/policies/images/Flash.png" style="height:20px" />
+                                    <a href="http://get.adobe.com/flashplayer/" target="_BLANk" title="External site that opens in a new window" style="color:#0033ff">Adobe Flash Player</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Audio Files
+                                </td>
+                                <td>
+                                    <img src="~/Content/policies/images/red.png" style="height:20px" />
+                                    <a href="http://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANk" title="External site that opens in a new window" style="color:#0033ff">Windows Media Player</a>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    function downloadFile(folder, filename) {
+        // e.preventDefault();  //stop the browser from following
+        //$.ajax({
+        //    url: "/Login/DownloadFile",
+        //    type: "POST",
+        //    async: false,
+        //    data: {
+        //        folder: folder,
+        //        filename: filename
+        //    },
+        //    success: function (data) {
+        //        window.open(data, '_blank');
+        //    }
+        //});
+        window.open("/Login/DownloadFile?folder=" + folder + "&filename=" + filename, "_blank");
+    }
+</script>
+</body></html>
